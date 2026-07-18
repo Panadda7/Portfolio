@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSK Cute Minimal Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Fredoka & Kanit สำหรับฟอนต์โค้งมนน่ารักสุดมินิมอล -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome สำหรับคลังไอคอนนุ่มฟู -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Fredoka', 'Kanit', sans-serif;
+            background-color: #FCF6F5;
+        }
+
+        /* 🎈 แอนิเมชันก้อนเมฆและฟองสบู่พาสเทลลอยได้ (Sweet Soft Floating Orbs) */
+        @keyframes gentle-bounce {
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-12px) scale(1.05); }
+        }
+        @keyframes float-side {
+            0%, 100% { transform: translate(0px, 0px); }
+            50% { transform: translate(15px, -15px); }
+        }
+        .animate-bounce-cute { animation: gentle-bounce 6s infinite ease-in-out; }
+        .animate-float-cute { animation: float-side 8s infinite ease-in-out; }
+
+        /* ✨ ตกแต่ง Scrollbar ให้เป็นสีครีมชมพูสุดน่ารัก */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF0E6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FFCAD4;
+            border-radius: 99px;
+            border: 3px solid #FAF0E6;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FFB5A7;
+        }
+
+        .no-scroll {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<!-- 🎨 THEME: Cute Creamy Peach & Soft Pink (พื้นหลังสีครีมนม คลื่นพลังพาสเทลหวานๆ ตัวอักษรสีน้ำตาลโกโก้อุ่นๆ #4A3E3D) -->
+<body class="text-[#4A3E3D] min-h-screen antialiased selection:bg-[#FFCAD4] selection:text-[#4A3E3D] overflow-x-hidden no-scroll relative">
+
+    <!-- ☁️ แสงออร่าและดวงดาวพาสเทลลอยพริ้วไหวรอบตัวตน -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute top-10 left-[-5%] w-80 h-80 bg-[#FFCAD4]/30 rounded-full blur-[70px] animate-bounce-cute"></div>
+        <div class="absolute bottom-20 right-[-10%] w-[28rem] h-[28rem] bg-[#FFD166]/20 rounded-full blur-[90px] animate-float-cute"></div>
+        <div class="absolute top-[40%] left-[20%] w-64 h-64 bg-[#B5E2FA]/20 rounded-full blur-[80px] animate-bounce-cute" style="animation-delay: -3s;"></div>
+    </div>
+
+
+    <!-- ================= ⏳ SWEET LOADER WINDOW (หน้าดาวน์โหลดน้องหมีน่ารัก) ================= -->
+    <div id="loader" class="fixed inset-0 bg-[#FCF6F5] z-[200] flex flex-col items-center justify-center p-6 transition-all duration-500">
+        <div class="text-center space-y-4">
+            <div class="text-5xl animate-bounce-cute inline-block">🌸</div>
+            <p class="text-sm font-bold tracking-widest text-[#FFB5A7] uppercase animate-pulse">กำลังกางร่มต้อนรับน้องๆ...</p>
+        </div>
+    </div>
+
+
+    <!-- ================= FLOATING CUTE NAVIGATION HEADER ================= -->
+    <div class="fixed top-4 left-0 w-full px-4 z-50 pointer-events-none">
+        <header class="max-w-4xl mx-auto bg-white/70 backdrop-blur-md border border-[#FCD5CE]/60 shadow-[0_10px_25px_-5px_rgba(255,181,167,0.15)] rounded-[2rem] px-6 py-3 flex justify-between items-center pointer-events-auto transition-all">
+            <div class="text-sm md:text-base font-bold tracking-wider text-[#4A3E3D] flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#FFB5A7] animate-pulse"></span>
+                <span class="font-bold tracking-tight">🍒 CHAI_PHU.PORT</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-wide text-[#4A3E3D]/80">
+                <a href="#home" class="hover:text-[#FFB5A7] transition-all">Home</a>
+                <a href="#about" class="hover:text-[#FFB5A7] transition-all">About</a>
+                <a href="#education" class="hover:text-[#FFB5A7] transition-all">Education</a>
+                <a href="#portfolio" class="hover:text-[#FFB5A7] transition-all">Portfolio</a>
+                <a href="#contact" class="hover:text-[#FFB5A7] transition-all">Contact</a>
+            </nav>
+            <div class="bg-[#FFCAD4]/60 border border-[#FCD5CE] px-3.5 py-1 rounded-full font-bold text-[10px] text-[#4A3E3D] flex items-center gap-1">
+                <span>✦ HAPPY DAYS</span>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- ================= HERO SECTION (หน้าแรก - ดีไซน์นุ่มฟู) ================= -->
+    <section class="min-h-screen flex items-center justify-center pt-28 pb-16 px-4 relative z-10" id="home">
+        <div class="max-w-4xl w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <div class="md:col-span-7 space-y-6 text-center md:text-left order-2 md:order-1">
+                <div class="inline-flex items-center gap-2 bg-[#FFCAD4]/30 text-[#FFB5A7] border border-[#FFCAD4] font-bold text-xs px-4 py-1.5 rounded-full shadow-sm animate-bounce-cute">
+                    🎈 WELCOME TO MY COZY CORNER
+                </div>
+                
+                <!-- หัวข้อหลักคงเดิมสไตล์น่ารักมินิมอล -->
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-[#4A3E3D]">
+                    ________________________
+                </h1>
+                
+                <h2 class="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FFB5A7] to-[#FCD5CE] tracking-wide">
+                    Portfolio เพื่อการศึกษาต่อ
+                </h2>
+                
+                <!-- กล่องกระจกฝ้าทรงสบู่มนๆ -->
+                <div class="relative bg-white/60 backdrop-blur-md p-6 rounded-[2rem] border border-white/80 shadow-[0_15px_30px_rgba(255,181,167,0.08)] overflow-hidden">
+                    <div class="absolute left-0 top-0 w-1.5 h-full bg-[#FFCAD4]"></div>
+                    <p class="text-sm md:text-base text-[#4A3E3D]/80 font-medium leading-relaxed">
+                        เว้นข้อความไว้ให้กรอกเอง
+                    </p>
+                </div>
+                
+                <!-- ปุ่มกดทรงก้อนเมฆดุ๊กดิ๊ก -->
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+                    <a href="#portfolio" class="bg-[#FFB5A7] hover:bg-[#FF9E8A] text-white font-bold text-xs tracking-widest uppercase px-6 py-4 rounded-full shadow-lg shadow-[#FFB5A7]/30 transition-all transform hover:-translate-y-1 hover:scale-105">
+                        My Portfolio 🌈
+                    </a>
+                    <a href="#contact" class="bg-white/80 hover:bg-white text-[#4A3E3D] font-bold text-xs tracking-widest uppercase px-6 py-4 rounded-full border border-[#FCD5CE]/60 shadow-md transition-all transform hover:-translate-y-1 hover:scale-105">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <!-- กล่องแสดงรูปโปรไฟล์ขอบนุ่มฟูสติกเกอร์น่ารัก -->
+            <div class="md:col-span-5 flex justify-center order-1 md:order-2">
+                <div class="relative">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-[#FFB5A7] to-[#FFCAD4] rounded-[3rem] opacity-30 blur-lg animate-bounce-cute"></div>
+                    <div class="relative w-64 h-64 md:w-72 md:h-72 bg-white/90 border-4 border-[#FCD5CE] p-4 rounded-[3rem] shadow-2xl transition-all duration-300 transform hover:rotate-3 hover:scale-105">
+                        <img src="images/profile.jpg" alt="My Profile" class="w-full h-full object-cover rounded-[2.2rem] bg-slate-50" onerror="this.src='https://placehold.co/400x400/ffe5ec/4a3e3d?text=My+Profile'">
+                        <span class="absolute -bottom-2 -right-2 text-3xl animate-bounce-cute">🦖</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= ABOUT ME SECTION (กล่องจัดวาง Bento แสนน่ารัก) ================= -->
+    <section class="py-20 px-4 max-w-4xl mx-auto relative z-10" id="about">
+        <div class="mb-12 text-center">
+            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#FCD5CE] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#FCD5CE] text-[#4A3E3D]">
+                🌸 ABOUT ME
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- บล็อกซ้าย: ข้อมูลทั่วไป -->
+            <div class="bg-white/60 border-2 border-[#FCD5CE] p-6 rounded-[2rem] shadow-md hover:scale-[1.02] transition-all">
+                <h3 class="text-base font-bold text-[#FFB5A7] mb-4 flex items-center gap-2"><i class="fa-solid fa-cookie-bite"></i> ประวัติส่วนตัว</h3>
+                <div class="space-y-3.5 text-sm font-semibold text-[#4A3E3D]/80">
+                    <p class="flex items-center gap-2">ชื่อ : <span class="text-[#4A3E3D]">__________________</span></p>
+                    <p class="flex items-center gap-2">โรงเรียน : <span class="text-[#4A3E3D]">__________________</span></p>
+                    <p class="flex items-center gap-2">แผนการเรียน : <span class="text-[#4A3E3D]">__________________</span></p>
+                </div>
+            </div>
+
+            <!-- บล็อกขวา: เป้าหมายแสนหวาน -->
+            <div class="bg-white/60 border-2 border-[#FCD5CE] p-6 rounded-[2rem] shadow-md hover:scale-[1.02] transition-all flex flex-col justify-between">
+                <div>
+                    <h3 class="text-base font-bold text-[#FFB5A7] mb-4 flex items-center gap-2"><i class="fa-solid fa-wand-magic-sparkles"></i> เป้าหมาย</h3>
+                    <p class="text-sm font-semibold text-[#4A3E3D]/80 leading-relaxed">
+                        ___________________________
+                    </p>
+                </div>
+                <div class="text-[10px] text-slate-400 font-bold tracking-widest mt-6 uppercase">// TARGET_READY_💖</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= EDUCATION SECTION (ไทม์ไลน์หัวใจนำทาง) ================= -->
+    <section class="py-20 px-4 max-w-3xl mx-auto relative z-10" id="education">
+        <div class="mb-16 text-center">
+            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#FCD5CE] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#FCD5CE] text-[#4A3E3D]">
+                🧁 EDUCATION PATH
+            </h2>
+        </div>
+
+        <!-- รางไทม์ไลน์เส้นประพาสเทลน่ารัก -->
+        <div class="relative border-l-4 border-dashed border-[#FFCAD4] ml-4 md:ml-32 space-y-10">
+            
+            <!-- ประถมศึกษา -->
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[14px] top-1.5 w-6 h-6 rounded-full bg-white border-4 border-[#FFCAD4] group-hover:border-[#FFB5A7] transition-all flex items-center justify-center">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FFCAD4]"></span>
+                </div>
+                <div class="absolute left-[-115px] top-1 hidden md:block w-24 text-right">
+                    <span class="text-[10px] tracking-widest text-[#FFB5A7] font-bold">PRIMARY</span>
+                </div>
+                <div class="bg-white/60 border-2 border-[#FCD5CE] p-5 rounded-2xl shadow-md transition-all group-hover:bg-white/90">
+                    <h3 class="font-bold text-base text-[#4A3E3D]">ประถมศึกษา</h3>
+                    <p class="text-sm text-slate-500 font-semibold mt-1">__________________</p>
+                </div>
+            </div>
+
+            <!-- มัธยมต้น -->
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[14px] top-1.5 w-6 h-6 rounded-full bg-white border-4 border-[#FFCAD4] group-hover:border-[#FFB5A7] transition-all flex items-center justify-center">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FFCAD4]"></span>
+                </div>
+                <div class="absolute left-[-115px] top-1 hidden md:block w-24 text-right">
+                    <span class="text-[10px] tracking-widest text-[#FFB5A7] font-bold">MIDDLE</span>
+                </div>
+                <div class="bg-white/60 border-2 border-[#FCD5CE] p-5 rounded-2xl shadow-md transition-all group-hover:bg-white/90">
+                    <h3 class="font-bold text-base text-[#4A3E3D]">มัธยมต้น</h3>
+                    <p class="text-sm text-slate-500 font-semibold mt-1">__________________</p>
+                </div>
+            </div>
+
+            <!-- มัธยมปลาย -->
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[14px] top-1.5 w-6 h-6 rounded-full bg-white border-4 border-[#FFB5A7] transition-all flex items-center justify-center">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#FFB5A7]"></span>
+                </div>
+                <div class="absolute left-[-115px] top-1 hidden md:block w-24 text-right">
+                    <span class="text-[10px] tracking-widest text-[#FFB5A7] font-bold">HIGH_SCH</span>
+                </div>
+                <div class="bg-white/80 border-4 border-[#FFCAD4] p-5 rounded-2xl shadow-lg">
+                    <h3 class="font-bold text-base text-[#FFB5A7]">มัธยมปลาย</h3>
+                    <p class="text-sm text-slate-600 font-bold mt-1">__________________</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= PORTFOLIO GALLERY SECTION (แกลเลอรีการ์ดโพลารอยด์สุดเก๋ครบทั้ง 11 ชิ้น) ================= -->
+    <section class="py-20 px-4 max-w-6xl mx-auto relative z-10" id="portfolio">
+        <div class="mb-12 text-center">
+            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#FCD5CE] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#FCD5CE] text-[#4A3E3D]">
+                🎈 PORTFOLIO ALBUM
+            </h2>
+            <p class="text-[10px] text-[#FFB5A7] tracking-widest uppercase mt-4 animate-pulse">[ ✦ TAP IMAGES TO ZOOM AND EXPLORE ✦ ]</p>
+        </div>
+
+        <!-- กริดแบบการ์ดโพลารอยด์น่ารักๆ ตกแต่งขอบนูนเงาสติ๊กเกอร์พาสเทล -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
+            <script>
+                // วนลูปวาดกล่องผลงานทั้ง 11 หน้า ในรูปแบบของโพลารอยด์การ์ด
+                for (let i = 1; i <= 11; i++) {
+                    document.write(`
+                        <div class="group bg-white border-2 border-[#FCD5CE] p-3 rounded-[1.5rem] shadow-sm hover:shadow-xl hover:shadow-pink-100 hover:border-[#FFB5A7] hover:-translate-y-2 transition-all duration-300 cursor-pointer relative" onclick="openLightbox('images/page${i}.jpg')">
+                            <!-- แปะโบว์สติ๊กเกอร์จิ๋วสุดน่ารักด้านบนการ์ดคละหน้า -->
+                            <div class="absolute -top-1.5 left-1/2 transform -translate-x-1/2 bg-[#FFCAD4]/80 text-[#4A3E3D] text-[8px] px-2 py-0.5 rounded-full font-bold border border-white shadow-sm z-10">✦ LOVELY</div>
+                            
+                            <div class="aspect-[3/4] bg-slate-50 rounded-xl overflow-hidden relative border border-slate-100 shadow-inner">
+                                <img src="images/page${i}.jpg" alt="Page ${i}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://placehold.co/300x400/ffe5ec/4a3e3d?text=Page+${i}'">
+                                <div class="absolute inset-0 bg-[#4A3E3D]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="text-[#4A3E3D] font-bold text-[9px] bg-white px-3 py-1.5 rounded-full shadow-md uppercase"><i class="fa-solid fa-heart mr-0.5"></i> VIEW</span>
+                                </div>
+                            </div>
+                            <div class="mt-3.5 text-center font-bold text-[10px] text-slate-400 group-hover:text-[#FFB5A7] tracking-wider">
+                                PAGE_${i.toString().padStart(2, '0')}
+                            </div>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+    </section>
+
+
+    <!-- ================= CONTACT SECTION (กล่องซองจดหมายพาสเทลแสนน่ารัก) ================= -->
+    <section class="py-20 px-4 max-w-4xl mx-auto relative z-10" id="contact">
+        <div class="mb-12 text-center">
+            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#FCD5CE] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#FCD5CE] text-[#4A3E3D]">
+                💌 SEND ME A CHERRY
+            </h2>
+        </div>
+
+        <div class="bg-white/60 border-4 border-[#FFCAD4] p-6 md:p-8 rounded-[2.5rem] shadow-xl grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- Email -->
+            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#FCD5CE]/60">
+                <div class="w-11 h-11 bg-[#FFCAD4]/30 text-[#FFB5A7] rounded-full flex items-center justify-center text-xl shadow-inner"><i class="fa-solid fa-envelope"></i></div>
+                <div class="overflow-hidden">
+                    <span class="text-[9px] text-[#FFB5A7] font-bold block tracking-wider">EMAIL</span>
+                    <span class="text-xs font-bold text-[#4A3E3D] block truncate">Email : __________________</span>
+                </div>
+            </div>
+
+            <!-- Facebook -->
+            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#FCD5CE]/60">
+                <div class="w-11 h-11 bg-blue-100 text-blue-400 rounded-full flex items-center justify-center text-xl shadow-inner"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="overflow-hidden">
+                    <span class="text-[9px] text-[#FFB5A7] font-bold block tracking-wider">FACEBOOK</span>
+                    <span class="text-xs font-bold text-[#4A3E3D] block truncate">Facebook : __________________</span>
+                </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#FCD5CE]/60">
+                <div class="w-11 h-11 bg-pink-100 text-pink-400 rounded-full flex items-center justify-center text-xl shadow-inner"><i class="fa-brands fa-instagram"></i></div>
+                <div class="overflow-hidden">
+                    <span class="text-[9px] text-[#FFB5A7] font-bold block tracking-wider">INSTAGRAM</span>
+                    <span class="text-xs font-bold text-[#4A3E3D] block truncate">Instagram : __________________</span>
+                </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#FCD5CE]/60">
+                <div class="w-11 h-11 bg-slate-100 text-slate-500 rounded-full flex items-center justify-center text-xl shadow-inner"><i class="fa-brands fa-github"></i></div>
+                <div class="overflow-hidden">
+                    <span class="text-[9px] text-[#FFB5A7] font-bold block tracking-wider">GITHUB</span>
+                    <span class="text-xs font-bold text-[#4A3E3D] block truncate">GitHub : __________________</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= LIGHTBOX POPUP SYSTEM ================= -->
+    <div id="lightbox" class="fixed inset-0 bg-[#4A3E3D]/60 backdrop-blur-sm hidden z-[100] flex-col items-center justify-center p-4 transition-all duration-300 opacity-0">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-[#4A3E3D] bg-white border-2 border-[#FCD5CE] text-xl w-10 h-10 flex items-center justify-center rounded-full shadow-xl hover:text-[#FFB5A7] transition-all">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-3xl max-h-[85vh] overflow-hidden rounded-[2rem] border-4 border-[#FFCAD4] bg-white p-2 shadow-2xl">
+            <img id="lightbox-img" class="w-full h-full object-contain max-h-[82vh] rounded-[1.5rem]" src="" alt="Expanded Cute Document">
+        </div>
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-white/40 backdrop-blur-md text-slate-400 py-8 text-center text-[10px] tracking-widest border-t border-[#FCD5CE]/60 relative z-10">
+        © 2026 COZY PORTFOLIO // OPERATIONS_SYSTEM: SWEET_CHERRY_HUD. ALL RIGHTS RESERVED.
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT CONTROLLERS ================= -->
+    <script>
+        // 1. ตรวจสอบและควบคุมการปิดหน้าระบบโหลดดาวน์โหลด
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.classList.add('opacity-0');
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                    document.body.classList.remove('no-scroll');
+                }, 500);
+            }, 500); 
+        });
+
+        // 2. จัดการแผงควบคุมหน้าต่างขยายภาพ (Lightbox System)
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            lightboxImg.src = src;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+            }, 10);
+
+            document.body.classList.add('no-scroll');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('opacity-0');
+            
+            setTimeout(() => {
+                lightbox.classList.remove('flex');
+                lightbox.classList.add('hidden');
+            }, 200);
+
+            document.body.classList.remove('no-scroll');
+        }
+
+        // หากคลิกพื้นที่สีดำรอบนอกรูปภาพจะเป็นการปิดหน้าต่างทันที
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+    </script>
+
+</body>
+</html>
