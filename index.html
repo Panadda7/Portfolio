@@ -1,18 +1,19 @@
+<!-- STREAMING_CHUNK: Setting up HTML head and cute font loading... -->
 <!DOCTYPE html>
 <html lang="th" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panadda Portfolio</title>
+    <title>PanaddaPortfolio</title>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Fredoka & Kanit สำหรับฟอนต์โค้งมนกลมมนสไตล์เกาหลี -->
+    <!-- Google Fonts: Fredoka & Kanit สำหรับฟอนต์โค้งมนกลมมนสไตล์เกาหลีอบอุ่น -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2 family=Fredoka:wght@300;400;500;600;700&family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome สำหรับคลังไอคอนนุ่มฟู -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,7 +21,7 @@
     <style>
         body {
             font-family: 'Fredoka', 'Kanit', sans-serif;
-            background-color: #FCF6F5;
+            background-color: #F3F7F2;
         }
 
         /* 🎈 แอนิเมชันลอยนุ่มนิ่ม (Gentle Float Orbs) */
@@ -41,20 +42,20 @@
         .animate-float-cute { animation: float-side 8s infinite ease-in-out; }
         .animate-swing-cute { animation: swing-cute 4s infinite ease-in-out; }
 
-        /* ✨ ตกแต่ง Scrollbar ลายครีมสตรอว์เบอร์รีสไตล์มินิมอล */
+        /* ✨ ตกแต่ง Scrollbar ลายครีมชาเขียวสไตล์มินิมอล */
         ::-webkit-scrollbar {
             width: 12px;
         }
         ::-webkit-scrollbar-track {
-            background: #FAF0E6;
+            background: #EBF5EB;
         }
         ::-webkit-scrollbar-thumb {
-            background: #FFCAD4;
+            background: #B7E4C7;
             border-radius: 99px;
-            border: 3px solid #FAF0E6;
+            border: 3px solid #EBF5EB;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #FFB5A7;
+            background: #74C69D;
         }
 
         .no-scroll {
@@ -63,78 +64,81 @@
     </style>
 </head>
 
-<!-- 🎨 THEME: Cozy Creamy Pink & Matcha Sage Accent -->
-<body class="text-[#4A3E3D] min-h-screen antialiased selection:bg-[#FFCAD4] selection:text-[#4A3E3D] overflow-x-hidden relative">
+<!-- 🎨 THEME: Cozy Creamy Matcha Green & Sage Accent -->
+<!-- STREAMING_CHUNK: Rendering body and background glow orbs... -->
+<body class="text-[#4A3E3D] min-h-screen antialiased selection:bg-[#C7F9CC] selection:text-[#4A3E3D] overflow-x-hidden relative">
 
-    <!-- ☁️ วอลเปเปอร์ออร่าสีก้อนเมฆและฟองสบู่พาสเทลกลมมน -->
+    <!-- ☁️ วอลเปเปอร์ออร่าสีก้อนเมฆและฟองสบู่พาสเทลเขียวมินต์กลมมน -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <div class="absolute top-10 left-[-5%] w-80 h-80 bg-[#FFCAD4]/30 rounded-full blur-[70px] animate-bounce-cute"></div>
-        <div class="absolute bottom-20 right-[-10%] w-[28rem] h-[28rem] bg-[#FFD166]/20 rounded-full blur-[90px] animate-float-cute"></div>
-        <div class="absolute top-[40%] left-[20%] w-64 h-64 bg-[#B5E2FA]/20 rounded-full blur-[80px] animate-bounce-cute" style="animation-delay: -3s;"></div>
+        <div class="absolute top-10 left-[-5%] w-80 h-80 bg-[#C7F9CC]/40 rounded-full blur-[70px] animate-bounce-cute"></div>
+        <div class="absolute bottom-20 right-[-10%] w-[28rem] h-[28rem] bg-[#E8F5E9]/50 rounded-full blur-[90px] animate-float-cute"></div>
+        <div class="absolute top-[40%] left-[20%] w-64 h-64 bg-[#D8F3DC]/30 rounded-full blur-[80px] animate-bounce-cute" style="animation-delay: -3s;"></div>
     </div>
 
 
     <!-- ================= FLOATING CUTE NAVIGATION HEADER ================= -->
+    <!-- STREAMING_CHUNK: Styling and placing the navigation header... -->
     <div class="fixed top-4 left-0 w-full px-4 z-50 pointer-events-none">
-        <header class="max-w-4xl mx-auto bg-white/70 backdrop-blur-md border border-[#FCD5CE]/60 shadow-[0_10px_25px_-5px_rgba(255,181,167,0.15)] rounded-[2rem] px-6 py-3 flex justify-between items-center pointer-events-auto transition-all">
+        <header class="max-w-4xl mx-auto bg-white/70 backdrop-blur-md border border-[#C7F9CC]/60 shadow-[0_10px_25px_-5px_rgba(116,198,157,0.15)] rounded-[2rem] px-6 py-3 flex justify-between items-center pointer-events-auto transition-all">
             <div class="text-sm md:text-base font-bold tracking-wider text-[#4A3E3D] flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-[#FFB5A7] animate-pulse"></span>
-                <span class="font-bold tracking-tight">🍒Panadda.PORT</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#74C69D] animate-pulse"></span>
+                <span class="font-bold tracking-tight">🍃 Panadda.PORT</span>
             </div>
             <nav class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-wide text-[#4A3E3D]/80">
-                <a href="#home" class="hover:text-[#FFB5A7] transition-all">Home</a>
-                <a href="#about" class="hover:text-[#FFB5A7] transition-all">About</a>
-                <a href="#education" class="hover:text-[#FFB5A7] transition-all">Education</a>
-                <a href="#portfolio" class="hover:text-[#FFB5A7] transition-all">Portfolio</a>
-                <a href="#contact" class="hover:text-[#FFB5A7] transition-all">Contact</a>
+                <a href="#home" class="hover:text-[#74C69D] transition-all">Home</a>
+                <a href="#about" class="hover:text-[#74C69D] transition-all">About</a>
+                <a href="#education" class="hover:text-[#74C69D] transition-all">Education</a>
+                <a href="#portfolio" class="hover:text-[#74C69D] transition-all">Portfolio</a>
+                <a href="#contact" class="hover:text-[#74C69D] transition-all">Contact</a>
             </nav>
-            <div class="bg-[#FFCAD4]/60 border border-[#FCD5CE] px-3.5 py-1 rounded-full font-bold text-[10px] text-[#4A3E3D] flex items-center gap-1">
-                <span>✦ COZY DAYS</span>
+            <div class="bg-[#C7F9CC]/60 border border-[#D8F3DC] px-3.5 py-1 rounded-full font-bold text-[10px] text-[#4A3E3D] flex items-center gap-1">
+                <span>✦ MATCHA DAYS 🍵</span>
             </div>
         </header>
     </div>
 
 
     <!-- ================= HERO SECTION (หน้าแรก - ดีไซน์นุ่มฟู) ================= -->
+    <!-- STREAMING_CHUNK: Designing the home hero section with soft green graphics... -->
     <section class="min-h-screen flex items-center justify-center pt-28 pb-16 px-4 relative z-10" id="home">
         <div class="max-w-4xl w-full grid md:grid-cols-12 gap-8 items-center">
             
             <div class="md:col-span-7 space-y-6 text-center md:text-left order-2 md:order-1">
-                <div class="inline-flex items-center gap-2 bg-[#FFCAD4]/30 text-[#FFB5A7] border border-[#FFCAD4] font-bold text-xs px-4 py-1.5 rounded-full shadow-sm animate-bounce-cute">
-                    🎈 WELCOME TO MY COZY CORNER
+                <div class="inline-flex items-center gap-2 bg-[#D8F3DC]/40 text-[#588157] border border-[#B7E4C7] font-bold text-xs px-4 py-1.5 rounded-full shadow-sm animate-bounce-cute">
+                    🌱 WELCOME TO MY MATCHA CORNER
                 </div>
                 
                 <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-[#4A3E3D]">
-                    ปนัดดา ศรีกู่กา
+                   ปนัดดา ศรีกู่กา
                 </h1>
                 
-                <h2 class="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FFB5A7] to-[#FCD5CE] tracking-wide">
+                <h2 class="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#74C69D] to-[#B7E4C7] tracking-wide">
                     Portfolio เพื่อการศึกษาต่อ
                 </h2>
                 
-                <div class="relative bg-white/60 backdrop-blur-md p-6 rounded-[2rem] border border-white/80 shadow-[0_15px_30px_rgba(255,181,167,0.08)] overflow-hidden">
-                    <div class="absolute left-0 top-0 w-1.5 h-full bg-[#FFCAD4]"></div>
+                <div class="relative bg-white/60 backdrop-blur-md p-6 rounded-[2rem] border border-white/80 shadow-[0_15px_30px_rgba(116,198,157,0.08)] overflow-hidden">
+                    <div class="absolute left-0 top-0 w-1.5 h-full bg-[#B7E4C7]"></div>
                     <p class="text-sm md:text-base text-[#4A3E3D]/80 font-medium leading-relaxed">
                         เว้นข้อความไว้ให้กรอกเอง
                     </p>
                 </div>
                 
                 <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
-                    <a href="#portfolio" class="bg-[#FFB5A7] hover:bg-[#FF9E8A] text-white font-bold text-xs tracking-widest uppercase px-6 py-4 rounded-full shadow-lg shadow-[#FFB5A7]/30 transition-all transform hover:-translate-y-1 hover:scale-105">
+                    <a href="#portfolio" class="bg-[#74C69D] hover:bg-[#52B788] text-white font-bold text-xs tracking-widest uppercase px-6 py-4 rounded-full shadow-lg shadow-[#74C69D]/30 transition-all transform hover:-translate-y-1 hover:scale-105">
                         My Portfolio 🌈
                     </a>
-                    <a href="#contact" class="bg-white/80 hover:bg-white text-[#4A3E3D] font-bold text-xs tracking-widest uppercase px-6 py-4 rounded-full border border-[#FCD5CE]/60 shadow-md transition-all transform hover:-translate-y-1 hover:scale-105">
+                    <a href="#contact" class="bg-white/80 hover:bg-white text-[#4A3E3D] font-bold text-xs tracking-widest uppercase px-6 py-4 rounded-full border border-[#D8F3DC]/60 shadow-md transition-all transform hover:-translate-y-1 hover:scale-105">
                         Contact Me
                     </a>
                 </div>
             </div>
 
-            <!-- รูปโปรไฟล์ขอบมนสติ๊กเกอร์พิกเซลคิ้วท์ -->
+            <!-- รูปโปรไฟล์ขอบมนสติ๊กเกอร์พิกเซลคิ้วท์โทนเขียวอบอุ่น -->
             <div class="md:col-span-5 flex justify-center order-1 md:order-2">
                 <div class="relative">
-                    <div class="absolute -inset-2 bg-gradient-to-r from-[#FFB5A7] to-[#FFCAD4] rounded-[3rem] opacity-30 blur-lg animate-bounce-cute"></div>
-                    <div class="relative w-64 h-64 md:w-72 md:h-72 bg-white/90 border-4 border-[#FCD5CE] p-4 rounded-[3rem] shadow-2xl transition-all duration-300 transform hover:rotate-3 hover:scale-105">
-                        <img src="images/profile.jpg" alt="My Profile" class="w-full h-full object-cover rounded-[2.2rem] bg-slate-50" onerror="this.src='https://placehold.co/400x400/ffe5ec/4a3e3d?text=My+Profile'">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-[#74C69D] to-[#B7E4C7] rounded-[3rem] opacity-30 blur-lg animate-bounce-cute"></div>
+                    <div class="relative w-64 h-64 md:w-72 md:h-72 bg-white/90 border-4 border-[#D8F3DC] p-4 rounded-[3rem] shadow-2xl transition-all duration-300 transform hover:rotate-3 hover:scale-105">
+                        <img src="images/profile.jpg" alt="My Profile" class="w-full h-full object-cover rounded-[2.2rem] bg-slate-50" onerror="this.src='https://placehold.co/400x400/e8f5e9/4a3e3d?text=My+Profile'">
                         <span class="absolute -bottom-2 -right-2 text-3xl animate-bounce-cute">🦖</span>
                     </div>
                 </div>
@@ -144,79 +148,80 @@
     </section>
 
 
-    <!--    <!-- ================= ABOUT ME & GOAL SECTION (สมุดภาพไดอารี่เปิดกางแสนน่ารัก) ================= -->
+    <!-- ================= ABOUT ME & GOAL SECTION (สมุดภาพไดอารี่เปิดกางแสนน่ารัก) ================= -->
+    <!-- STREAMING_CHUNK: Rendering the Open Diary (Scrapbook) about section... -->
     <section class="py-20 px-4 max-w-5xl mx-auto relative z-10" id="about">
         <div class="mb-14 text-center">
-            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#FCD5CE] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#FCD5CE] text-[#4A3E3D]">
+            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#D8F3DC] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#D8F3DC] text-[#4A3E3D]">
                 🌸 MY DIARY & GOALS
             </h2>
         </div>
 
         <!-- ตัวสมุดบันทึก Diary กางออก (2 หน้าซ้ายขวา) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 bg-white/50 border-4 border-[#FCD5CE] p-6 md:p-10 rounded-[3rem] shadow-[0_20px_45px_rgba(255,181,167,0.12)] relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 bg-white/50 border-4 border-[#D8F3DC] p-6 md:p-10 rounded-[3rem] shadow-[0_20px_45px_rgba(116,198,157,0.12)] relative">
             
             <!-- แกนกลางสปริงสมุดจิ๋ว (ตกแต่งความสมจริง) -->
             <div class="hidden md:flex absolute left-1/2 top-8 bottom-8 -translate-x-1/2 w-4 flex-col justify-around items-center pointer-events-none z-20">
-                <div class="w-4 h-4 bg-[#FFCAD4] rounded-full border-2 border-white shadow-sm"></div>
-                <div class="w-4 h-4 bg-[#FFCAD4] rounded-full border-2 border-white shadow-sm"></div>
-                <div class="w-4 h-4 bg-[#FFCAD4] rounded-full border-2 border-white shadow-sm"></div>
-                <div class="w-4 h-4 bg-[#FFCAD4] rounded-full border-2 border-white shadow-sm"></div>
-                <div class="w-4 h-4 bg-[#FFCAD4] rounded-full border-2 border-white shadow-sm"></div>
+                <div class="w-4 h-4 bg-[#B7E4C7] rounded-full border-2 border-white shadow-sm"></div>
+                <div class="w-4 h-4 bg-[#B7E4C7] rounded-full border-2 border-white shadow-sm"></div>
+                <div class="w-4 h-4 bg-[#B7E4C7] rounded-full border-2 border-white shadow-sm"></div>
+                <div class="w-4 h-4 bg-[#B7E4C7] rounded-full border-2 border-white shadow-sm"></div>
+                <div class="w-4 h-4 bg-[#B7E4C7] rounded-full border-2 border-white shadow-sm"></div>
             </div>
 
-            <!-- หน้าสมุดซ้าย: ประวัติส่วนตัว (ดีไซน์ประดับเทปวาชิพาสเทล) -->
-            <div class="bg-white border-2 border-[#FCD5CE]/60 p-6 rounded-[2rem] shadow-sm relative overflow-hidden flex flex-col justify-between">
+            <!-- หน้าสมุดซ้าย: ประวัติส่วนตัว (ดีไซน์ประดับเทปวาชิพาสเทลเขียว) -->
+            <div class="bg-white border-2 border-[#D8F3DC]/60 p-6 rounded-[2rem] shadow-sm relative overflow-hidden flex flex-col justify-between">
                 <!-- สติกเกอร์เทปวาชิคาดหัวมุมซ้ายบน -->
-                <div class="absolute -top-1 -left-8 bg-gradient-to-r from-[#FFCAD4] to-[#FCD5CE] w-32 h-6 transform -rotate-12 border-b border-white opacity-85 z-10 flex items-center justify-center">
+                <div class="absolute -top-1 -left-8 bg-gradient-to-r from-[#B7E4C7] to-[#D8F3DC] w-32 h-6 transform -rotate-12 border-b border-white opacity-85 z-10 flex items-center justify-center">
                     <span class="text-[8px] font-bold text-white tracking-widest">✦ MY DECO ✦</span>
                 </div>
 
                 <div class="space-y-6 pt-4">
-                    <h3 class="text-lg font-black text-[#FFB5A7] flex items-center gap-2">
+                    <h3 class="text-lg font-black text-[#588157] flex items-center gap-2">
                         <i class="fa-solid fa-cookie-bite text-sm"></i> ประวัติส่วนตัว
                     </h3>
                     
                     <div class="space-y-4 text-sm font-semibold text-[#4A3E3D]/80">
-                        <div class="flex items-center gap-2 border-b border-[#FAF0E6] pb-2">
-                            <span class="text-rose-400">🧸</span> ชื่อ : <span class="text-[#4A3E3D]">__________________</span>
+                        <div class="flex items-center gap-2 border-b border-[#EBF5EB] pb-2">
+                            <span class="text-emerald-500">🧸</span> ชื่อ : <span class="text-[#4A3E3D]">__________________</span>
                         </div>
-                        <div class="flex items-center gap-2 border-b border-[#FAF0E6] pb-2">
-                            <span class="text-[#FFD166]">🏫</span> โรงเรียน : <span class="text-[#4A3E3D]">__________________</span>
+                        <div class="flex items-center gap-2 border-b border-[#EBF5EB] pb-2">
+                            <span class="text-amber-500">🏫</span> โรงเรียน : <span class="text-[#4A3E3D]">__________________</span>
                         </div>
-                        <div class="flex items-center gap-2 border-b border-[#FAF0E6] pb-2">
-                            <span class="text-[#B5E2FA]">📐</span> แผนการเรียน : <span class="text-[#4A3E3D]">__________________</span>
+                        <div class="flex items-center gap-2 border-b border-[#EBF5EB] pb-2">
+                            <span class="text-sky-500">📐</span> แผนการเรียน : <span class="text-[#4A3E3D]">__________________</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="mt-8 pt-4 border-t border-dashed border-[#FAF0E6] flex justify-between items-center text-[10px] text-slate-400 font-bold tracking-widest">
+                <div class="mt-8 pt-4 border-t border-dashed border-[#EBF5EB] flex justify-between items-center text-[10px] text-slate-400 font-bold tracking-widest">
                     <span>PAGE // 01</span>
-                    <span class="text-[#FFCAD4]">SWEET_MEMORIES 💖</span>
+                    <span class="text-[#74C69D]">SWEET_MEMORIES 💚</span>
                 </div>
             </div>
 
-            <!-- หน้าสมุดขวา: เป้าหมาย (ดีไซน์ Sticky Note แผ่นโพสต์อิทขอบย่น) -->
+            <!-- หน้าสมุดขวา: เป้าหมาย (ดีไซน์ Sticky Note แผ่นโพสต์อิทโทนกระดาษนวล) -->
             <div class="bg-amber-50/50 border-2 border-amber-200/60 p-6 rounded-[2rem] shadow-sm relative flex flex-col justify-between overflow-hidden">
-                <!-- คลิปหนีบกระดาษสติกเกอร์ตรงหัวด้านบน -->
-                <div class="absolute top-3 left-1/2 transform -translate-x-1/2 w-10 h-7 bg-[#FFCAD4] rounded-md border border-white shadow-sm flex items-center justify-center z-10">
+                <!-- คลิปหนีบกระดาษสติกเกอร์ตรงหัวด้านบนสีเขียวหวาน -->
+                <div class="absolute top-3 left-1/2 transform -translate-x-1/2 w-10 h-7 bg-[#B7E4C7] rounded-md border border-white shadow-sm flex items-center justify-center z-10">
                     <div class="w-1.5 h-3 bg-white rounded-full"></div>
                 </div>
 
                 <div class="space-y-6 pt-6 text-center md:text-left">
-                    <h3 class="text-lg font-black text-[#FFB5A7] flex items-center gap-2 justify-center md:justify-start">
+                    <h3 class="text-lg font-black text-[#588157] flex items-center gap-2 justify-center md:justify-start">
                         <i class="fa-solid fa-wand-magic-sparkles text-sm"></i> เป้าหมายในอนาคต
                     </h3>
                     
                     <!-- บล็อกพื้นที่เขียนเป้าหมายเลียนแบบกระดาษมีเส้นประเขียน -->
-                    <div class="space-y-2 text-sm font-semibold text-[#4A3E3D]/80 leading-loose min-h-[100px] bg-[linear-gradient(#FAF0E6_1px,transparent_1px)] bg-[size:100%_2.2rem] pt-1">
+                    <div class="space-y-2 text-sm font-semibold text-[#4A3E3D]/80 leading-loose min-h-[100px] bg-[linear-gradient(#EBF5EB_1px,transparent_1px)] bg-[size:100%_2.2rem] pt-1">
                         <p>___________________________</p>
                         <p>___________________________</p>
                     </div>
                 </div>
 
-                <div class="mt-8 pt-4 border-t border-dashed border-[#FAF0E6]/30 flex justify-between items-center text-[10px] text-slate-400 font-bold tracking-widest">
+                <div class="mt-8 pt-4 border-t border-dashed border-[#EBF5EB]/30 flex justify-between items-center text-[10px] text-slate-400 font-bold tracking-widest">
                     <span>PAGE // 02</span>
-                    <span class="text-amber-400/80">TARGET_READY_⚡</span>
+                    <span class="text-emerald-600/80">TARGET_READY_⚡</span>
                 </div>
             </div>
 
@@ -224,34 +229,35 @@
     </section>
 
 
-    <!--    <!-- ================= EDUCATION SECTION (ราวริบบิ้นแกว่งพวงกุญแจสุดน่ารัก) ================= -->
+    <!-- ================= EDUCATION SECTION (ราวริบบิ้นกิ่งไม้แกว่งพวงกุญแจสุดธรรมชาติ) ================= -->
+    <!-- STREAMING_CHUNK: Building the botanical hanging garland education timeline... -->
     <section class="py-20 px-4 max-w-4xl mx-auto relative z-10" id="education">
         <div class="mb-16 text-center">
-            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#FCD5CE] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#FCD5CE] text-[#4A3E3D]">
+            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#D8F3DC] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#D8F3DC] text-[#4A3E3D]">
                 🧁 EDUCATION PATH
             </h2>
-            <p class="text-[10px] text-[#FFCAD4] font-bold tracking-widest uppercase mt-4 animate-pulse">✦ MY PROGRESS GROWING UP ✦</p>
+            <p class="text-[10px] text-[#74C69D] font-bold tracking-widest uppercase mt-4 animate-pulse">✦ MY PROGRESS GROWING UP ✦</p>
         </div>
 
-        <!-- ราวแขวนพาสเทลตกแต่งโบว์ริบบิ้นชมพู -->
-        <div class="relative border-l-4 border-dashed border-[#FFCAD4] ml-6 md:ml-40 space-y-12">
+        <!-- ราวแขวนพาสเทลตกแต่งโบว์เขียวชอุ่ม -->
+        <div class="relative border-l-4 border-dashed border-[#B7E4C7] ml-6 md:ml-40 space-y-12">
             
             <!-- ราวระโยงริบบิ้น 1: ประถมศึกษา -->
             <div class="relative pl-8 md:pl-12 group animate-swing-cute" style="animation-delay: 0s;">
-                <!-- ปมริบบิ้นโบว์สีชมพูนิ่มเชื่อมต่อ -->
+                <!-- ใบไม้ผูกเชื่อมต่อ -->
                 <div class="absolute -left-[18px] -top-1 z-20 flex items-center justify-center">
-                    <span class="text-2xl">🎀</span>
+                    <span class="text-2xl">🌱</span>
                 </div>
                 
                 <!-- สติกเกอร์บอกระยะประถมศึกษา -->
                 <div class="absolute left-[-135px] top-1 hidden md:block w-24 text-right">
-                    <span class="text-[10px] bg-[#B5E2FA]/40 text-sky-500 font-extrabold px-2.5 py-1 rounded-full tracking-wider border border-[#B5E2FA]">🌱 PRIMARY</span>
+                    <span class="text-[10px] bg-emerald-100/60 text-[#588157] font-extrabold px-2.5 py-1 rounded-full tracking-wider border border-[#B7E4C7]">🌱 PRIMARY</span>
                 </div>
 
                 <!-- ตัวบอร์ดการ์ดห้อยแกว่ง -->
-                <div class="bg-white border-4 border-[#FFCAD4] p-5 rounded-[2rem] shadow-[0_12px_25px_rgba(255,181,167,0.1)] transition-all duration-300 transform group-hover:scale-[1.03] group-hover:border-[#FFB5A7] relative">
+                <div class="bg-white border-4 border-[#B7E4C7] p-5 rounded-[2rem] shadow-[0_12px_25px_rgba(116,198,157,0.1)] transition-all duration-300 transform group-hover:scale-[1.03] group-hover:border-[#74C69D] relative">
                     <!-- ลวดลายริบบิ้นขอบบน -->
-                    <div class="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-[#FAF0E6] rounded-full"></div>
+                    <div class="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-[#EBF5EB] rounded-full"></div>
                     
                     <h3 class="font-extrabold text-base text-[#4A3E3D] flex items-center gap-1.5">
                         <span class="text-xs">👶</span> ประถมศึกษา
@@ -263,15 +269,15 @@
             <!-- ราวระโยงริบบิ้น 2: มัธยมศึกษาตอนต้น -->
             <div class="relative pl-8 md:pl-12 group animate-swing-cute" style="animation-delay: -1.5s;">
                 <div class="absolute -left-[18px] -top-1 z-20 flex items-center justify-center">
-                    <span class="text-2xl">🎀</span>
+                    <span class="text-2xl">🌿</span>
                 </div>
                 
                 <div class="absolute left-[-135px] top-1 hidden md:block w-24 text-right">
-                    <span class="text-[10px] bg-[#FFD166]/30 text-amber-500 font-extrabold px-2.5 py-1 rounded-full tracking-wider border border-[#FFD166]/50">🌿 MIDDLE</span>
+                    <span class="text-[10px] bg-[#C7F9CC]/40 text-emerald-600 font-extrabold px-2.5 py-1 rounded-full tracking-wider border border-[#C7F9CC]">🌿 MIDDLE</span>
                 </div>
 
-                <div class="bg-white border-4 border-[#FCD5CE] p-5 rounded-[2rem] shadow-[0_12px_25px_rgba(255,181,167,0.1)] transition-all duration-300 transform group-hover:scale-[1.03] group-hover:border-[#FFCAD4] relative">
-                    <div class="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-[#FAF0E6] rounded-full"></div>
+                <div class="bg-white border-4 border-[#D8F3DC] p-5 rounded-[2rem] shadow-[0_12px_25px_rgba(116,198,157,0.1)] transition-all duration-300 transform group-hover:scale-[1.03] group-hover:border-[#B7E4C7] relative">
+                    <div class="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-[#EBF5EB] rounded-full"></div>
                     
                     <h3 class="font-extrabold text-base text-[#4A3E3D] flex items-center gap-1.5">
                         <span class="text-xs">🎒</span> มัธยมต้น
@@ -283,20 +289,20 @@
             <!-- ราวระโยงริบบิ้น 3: มัธยมศึกษาตอนปลาย -->
             <div class="relative pl-8 md:pl-12 group animate-swing-cute" style="animation-delay: -3s;">
                 <div class="absolute -left-[18px] -top-1 z-20 flex items-center justify-center">
-                    <span class="text-2xl">🎀</span>
+                    <span class="text-2xl">🍀</span>
                 </div>
                 
                 <div class="absolute left-[-135px] top-1 hidden md:block w-24 text-right">
-                    <span class="text-[10px] bg-[#FFCAD4]/40 text-[#FFB5A7] font-extrabold px-2.5 py-1 rounded-full tracking-wider border border-[#FFCAD4]">🌸 HIGH_SCH</span>
+                    <span class="text-[10px] bg-[#B7E4C7]/40 text-[#588157] font-extrabold px-2.5 py-1 rounded-full tracking-wider border border-[#B7E4C7]">🍀 HIGH_SCH</span>
                 </div>
 
-                <!-- การ์ดตัวเอกแต่งขอบชมพูนมนุ่มฟูเด่นเป็นพิเศษ -->
-                <div class="bg-[#FFF5F6] border-4 border-[#FFCAD4] p-5 rounded-[2.2rem] shadow-[0_15px_30px_rgba(255,181,167,0.15)] transition-all duration-300 transform group-hover:scale-[1.03] relative overflow-hidden">
+                <!-- การ์ดตัวเอกแต่งขอบเขียวนมพาสเทลเด่นเป็นพิเศษ -->
+                <div class="bg-[#F2F9F2] border-4 border-[#B7E4C7] p-5 rounded-[2.2rem] shadow-[0_15px_30px_rgba(116,198,157,0.15)] transition-all duration-300 transform group-hover:scale-[1.03] relative overflow-hidden">
                     <!-- สติกเกอร์ดอกไม้จิ๋วประดับมุมการ์ด -->
-                    <span class="absolute top-2 right-4 text-sm animate-spin-slow">🌺</span>
-                    <div class="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-[#FAF0E6] rounded-full"></div>
+                    <span class="absolute top-2 right-4 text-sm animate-spin-slow">🍀</span>
+                    <div class="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-[#EBF5EB] rounded-full"></div>
                     
-                    <h3 class="font-extrabold text-base text-[#FFB5A7] flex items-center gap-1.5">
+                    <h3 class="font-extrabold text-base text-[#74C69D] flex items-center gap-1.5">
                         <span class="text-xs">🎓</span> มัธยมปลาย
                     </h3>
                     <p class="text-sm text-slate-600 font-bold mt-2">__________________</p>
@@ -307,32 +313,33 @@
     </section>
 
 
-    <!--    <!-- ================= PORTFOLIO GALLERY SECTION (แกลเลอรีการ์ดโพลารอยด์สุดเก๋ครบทั้ง 11 ชิ้น) ================= -->
+    <!-- ================= PORTFOLIO GALLERY SECTION (แกลเลอรีการ์ดโพลารอยด์สุดเก๋ครบทั้ง 11 ชิ้น) ================= -->
+    <!-- STREAMING_CHUNK: Generating the polaroid document cards gallery grid... -->
     <section class="py-20 px-4 max-w-6xl mx-auto relative z-10" id="portfolio">
         <div class="mb-12 text-center">
-            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#FCD5CE] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#FCD5CE] text-[#4A3E3D]">
+            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#D8F3DC] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#D8F3DC] text-[#4A3E3D]">
                 🎈 PORTFOLIO ALBUM
             </h2>
-            <p class="text-[10px] text-[#FFB5A7] tracking-widest uppercase mt-4 animate-pulse">[ ✦ TAP IMAGES TO ZOOM AND EXPLORE ✦ ]</p>
+            <p class="text-[10px] text-[#74C69D] tracking-widest uppercase mt-4 animate-pulse">[ ✦ TAP IMAGES TO ZOOM AND EXPLORE ✦ ]</p>
         </div>
 
-        <!-- กริดแบบการ์ดโพลารอยด์น่ารักๆ ตกแต่งขอบนูนเงาสติ๊กเกอร์พาสเทล -->
+        <!-- กริดแบบการ์ดโพลารอยด์น่ารักๆ ตกแต่งขอบนูนเงาสติ๊กเกอร์พาสเทลเขียวชาเขียว -->
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
             <script>
                 // วนลูปวาดกล่องผลงานทั้ง 11 หน้า ในรูปแบบของโพลารอยด์การ์ด
                 for (let i = 1; i <= 11; i++) {
                     document.write(`
-                        <div class="group bg-white border-2 border-[#FCD5CE] p-3 rounded-[1.5rem] shadow-sm hover:shadow-xl hover:shadow-pink-100 hover:border-[#FFB5A7] hover:-translate-y-2 transition-all duration-300 cursor-pointer relative" onclick="openLightbox('images/page${i}.jpg')">
+                        <div class="group bg-white border-2 border-[#D8F3DC] p-3 rounded-[1.5rem] shadow-sm hover:shadow-xl hover:shadow-green-100 hover:border-[#74C69D] hover:-translate-y-2 transition-all duration-300 cursor-pointer relative" onclick="openLightbox('images/page${i}.jpg')">
                             <!-- แปะโบว์สติ๊กเกอร์จิ๋วสุดน่ารักด้านบนการ์ดคละหน้า -->
-                            <div class="absolute -top-1.5 left-1/2 transform -translate-x-1/2 bg-[#FFCAD4]/80 text-[#4A3E3D] text-[8px] px-2 py-0.5 rounded-full font-bold border border-white shadow-sm z-10">✦ LOVELY</div>
+                            <div class="absolute -top-1.5 left-1/2 transform -translate-x-1/2 bg-[#C7F9CC]/80 text-[#4A3E3D] text-[8px] px-2 py-0.5 rounded-full font-bold border border-white shadow-sm z-10">✦ LOVELY</div>
                             
                             <div class="aspect-[3/4] bg-slate-50 rounded-xl overflow-hidden relative border border-slate-100 shadow-inner">
-                                <img src="images/page${i}.jpg" alt="Page ${i}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://placehold.co/300x400/ffe5ec/4a3e3d?text=Page+${i}'">
+                                <img src="images/page${i}.jpg" alt="Page ${i}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://placehold.co/300x400/e8f5e9/4a3e3d?text=Page+${i}'">
                                 <div class="absolute inset-0 bg-[#4A3E3D]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                    <span class="text-[#4A3E3D] font-bold text-[9px] bg-white px-3 py-1.5 rounded-full shadow-md uppercase"><i class="fa-solid fa-heart mr-0.5"></i> VIEW</span>
+                                    <span class="text-[#4A3E3D] font-bold text-[9px] bg-white px-3 py-1.5 rounded-full shadow-md uppercase"><i class="fa-solid fa-leaf mr-0.5"></i> VIEW</span>
                                 </div>
                             </div>
-                            <div class="mt-3.5 text-center font-bold text-[10px] text-slate-400 group-hover:text-[#FFB5A7] tracking-wider">
+                            <div class="mt-3.5 text-center font-bold text-[10px] text-slate-400 group-hover:text-[#74C69D] tracking-wider">
                                 PAGE_${i.toString().padStart(2, '0')}
                             </div>
                         </div>
@@ -344,47 +351,48 @@
 
 
     <!-- ================= CONTACT SECTION (กล่องซองจดหมายพาสเทลแสนน่ารัก) ================= -->
+    <!-- STREAMING_CHUNK: Rendering the green pastel contact envelope cards... -->
     <section class="py-20 px-4 max-w-4xl mx-auto relative z-10" id="contact">
         <div class="mb-12 text-center">
-            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#FCD5CE] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#FCD5CE] text-[#4A3E3D]">
+            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight inline-block bg-white border-4 border-[#D8F3DC] px-6 py-2.5 rounded-full shadow-[5px_5px_0px_0px_#D8F3DC] text-[#4A3E3D]">
                 💌 SEND ME A CHERRY
             </h2>
         </div>
 
-        <div class="bg-white/60 border-4 border-[#FFCAD4] p-6 md:p-8 rounded-[2.5rem] shadow-xl grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white/60 border-4 border-[#B7E4C7] p-6 md:p-8 rounded-[2.5rem] shadow-xl grid grid-cols-1 sm:grid-cols-2 gap-4">
             
             <!-- Email -->
-            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#FCD5CE]/60">
-                <div class="w-11 h-11 bg-[#FFCAD4]/30 text-[#FFB5A7] rounded-full flex items-center justify-center text-xl shadow-inner"><i class="fa-solid fa-envelope"></i></div>
+            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#D8F3DC]/60">
+                <div class="w-11 h-11 bg-[#C7F9CC]/30 text-[#74C69D] rounded-full flex items-center justify-center text-xl shadow-inner"><i class="fa-solid fa-envelope"></i></div>
                 <div class="overflow-hidden">
-                    <span class="text-[9px] text-[#FFB5A7] font-bold block tracking-wider">EMAIL</span>
+                    <span class="text-[9px] text-[#74C69D] font-bold block tracking-wider">EMAIL</span>
                     <span class="text-xs font-bold text-[#4A3E3D] block truncate">Email : __________________</span>
                 </div>
             </div>
 
             <!-- Facebook -->
-            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#FCD5CE]/60">
+            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#D8F3DC]/60">
                 <div class="w-11 h-11 bg-blue-100 text-blue-400 rounded-full flex items-center justify-center text-xl shadow-inner"><i class="fa-brands fa-facebook-f"></i></div>
                 <div class="overflow-hidden">
-                    <span class="text-[9px] text-[#FFB5A7] font-bold block tracking-wider">FACEBOOK</span>
+                    <span class="text-[9px] text-[#74C69D] font-bold block tracking-wider">FACEBOOK</span>
                     <span class="text-xs font-bold text-[#4A3E3D] block truncate">Facebook : __________________</span>
                 </div>
             </div>
 
             <!-- Instagram -->
-            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#FCD5CE]/60">
+            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#D8F3DC]/60">
                 <div class="w-11 h-11 bg-pink-100 text-pink-400 rounded-full flex items-center justify-center text-xl shadow-inner"><i class="fa-brands fa-instagram"></i></div>
                 <div class="overflow-hidden">
-                    <span class="text-[9px] text-[#FFB5A7] font-bold block tracking-wider">INSTAGRAM</span>
+                    <span class="text-[9px] text-[#74C69D] font-bold block tracking-wider">INSTAGRAM</span>
                     <span class="text-xs font-bold text-[#4A3E3D] block truncate">Instagram : __________________</span>
                 </div>
             </div>
 
             <!-- GitHub -->
-            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#FCD5CE]/60">
+            <div class="flex items-center gap-4 p-4 bg-white/80 rounded-2xl border border-[#D8F3DC]/60">
                 <div class="w-11 h-11 bg-slate-100 text-slate-500 rounded-full flex items-center justify-center text-xl shadow-inner"><i class="fa-brands fa-github"></i></div>
                 <div class="overflow-hidden">
-                    <span class="text-[9px] text-[#FFB5A7] font-bold block tracking-wider">GITHUB</span>
+                    <span class="text-[9px] text-[#74C69D] font-bold block tracking-wider">GITHUB</span>
                     <span class="text-xs font-bold text-[#4A3E3D] block truncate">GitHub : __________________</span>
                 </div>
             </div>
@@ -394,23 +402,25 @@
 
 
     <!-- ================= LIGHTBOX POPUP SYSTEM ================= -->
+    <!-- STREAMING_CHUNK: Integrating light-box expand component... -->
     <div id="lightbox" class="fixed inset-0 bg-[#4A3E3D]/60 backdrop-blur-sm hidden z-[100] flex-col items-center justify-center p-4 transition-all duration-300 opacity-0">
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-[#4A3E3D] bg-white border-2 border-[#FCD5CE] text-xl w-10 h-10 flex items-center justify-center rounded-full shadow-xl hover:text-[#FFB5A7] transition-all">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-[#4A3E3D] bg-white border-2 border-[#D8F3DC] text-xl w-10 h-10 flex items-center justify-center rounded-full shadow-xl hover:text-[#74C69D] transition-all">
             <i class="fa-solid fa-xmark"></i>
         </button>
-        <div class="max-w-3xl max-h-[85vh] overflow-hidden rounded-[2rem] border-4 border-[#FFCAD4] bg-white p-2 shadow-2xl">
+        <div class="max-w-3xl max-h-[85vh] overflow-hidden rounded-[2rem] border-4 border-[#B7E4C7] bg-white p-2 shadow-2xl">
             <img id="lightbox-img" class="w-full h-full object-contain max-h-[82vh] rounded-[1.5rem]" src="" alt="Expanded Cute Document">
         </div>
     </div>
 
 
     <!-- ================= FOOTER ================= -->
-    <footer class="bg-white/40 backdrop-blur-md text-slate-400 py-8 text-center text-[10px] tracking-widest border-t border-[#FCD5CE]/60 relative z-10">
+    <footer class="bg-white/40 backdrop-blur-md text-slate-400 py-8 text-center text-[10px] tracking-widest border-t border-[#D8F3DC]/60 relative z-10">
         © 2026 COZY PORTFOLIO // OPERATIONS_SYSTEM: SWEET_CHERRY_HUD. ALL RIGHTS RESERVED.
     </footer>
 
 
     <!-- ================= JAVASCRIPT CONTROLLERS ================= -->
+    <!-- STREAMING_CHUNK: Binding javascript interactive click event listeners... -->
     <script>
         // 1. จัดการแผงควบคุมหน้าต่างขยายภาพ (Lightbox System)
         function openLightbox(src) {
@@ -450,3 +460,4 @@
 
 </body>
 </html>
+```eof
