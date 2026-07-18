@@ -64,22 +64,13 @@
 </head>
 
 <!-- 🎨 THEME: Cozy Creamy Pink & Matcha Sage Accent -->
-<body class="text-[#4A3E3D] min-h-screen antialiased selection:bg-[#FFCAD4] selection:text-[#4A3E3D] overflow-x-hidden no-scroll relative">
+<body class="text-[#4A3E3D] min-h-screen antialiased selection:bg-[#FFCAD4] selection:text-[#4A3E3D] overflow-x-hidden relative">
 
     <!-- ☁️ วอลเปเปอร์ออร่าสีก้อนเมฆและฟองสบู่พาสเทลกลมมน -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div class="absolute top-10 left-[-5%] w-80 h-80 bg-[#FFCAD4]/30 rounded-full blur-[70px] animate-bounce-cute"></div>
         <div class="absolute bottom-20 right-[-10%] w-[28rem] h-[28rem] bg-[#FFD166]/20 rounded-full blur-[90px] animate-float-cute"></div>
         <div class="absolute top-[40%] left-[20%] w-64 h-64 bg-[#B5E2FA]/20 rounded-full blur-[80px] animate-bounce-cute" style="animation-delay: -3s;"></div>
-    </div>
-
-
-    <!-- ================= ⏳ SWEET LOADER WINDOW ================= -->
-    <div id="loader" class="fixed inset-0 bg-[#FCF6F5] z-[200] flex flex-col items-center justify-center p-6 transition-all duration-500">
-        <div class="text-center space-y-4">
-            <div class="text-5xl animate-bounce-cute inline-block">🌸</div>
-            <p class="text-sm font-bold tracking-widest text-[#FFB5A7] uppercase animate-pulse">กำลังจัดเรียงสมุดบันทึก...</p>
-        </div>
     </div>
 
 
@@ -421,19 +412,7 @@
 
     <!-- ================= JAVASCRIPT CONTROLLERS ================= -->
     <script>
-        // 1. ตรวจสอบและควบคุมการปิดหน้าระบบโหลดดาวน์โหลด
-        window.addEventListener('load', function() {
-            const loader = document.getElementById('loader');
-            setTimeout(() => {
-                loader.classList.add('opacity-0');
-                setTimeout(() => {
-                    loader.style.display = 'none';
-                    document.body.classList.remove('no-scroll');
-                }, 500);
-            }, 500); 
-        });
-
-        // 2. จัดการแผงควบคุมหน้าต่างขยายภาพ (Lightbox System)
+        // 1. จัดการแผงควบคุมหน้าต่างขยายภาพ (Lightbox System)
         function openLightbox(src) {
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
